@@ -357,7 +357,8 @@
             "#!/bin/bash\n",
 			"yum install -y httpd\n",
 			"systemctl enable httpd\n",
-			"systemctl start httpd\n"
+			"systemctl start httpd\n",
+		        "echo ""hello sanjay" >> /var/www/html/hello.text"
 			] ]
     }
 }
