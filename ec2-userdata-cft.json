@@ -359,7 +359,8 @@
 			"systemctl enable httpd\n",
 			"systemctl start httpd\n",
 		        "echo hello sanjay, welcome to webserver >> /var/www/html/index.html",
-		        "echo hello"
+		        "echo hello",
+		        "setenforce 0"
 			] ]
     }
 }
