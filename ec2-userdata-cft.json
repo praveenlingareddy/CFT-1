@@ -358,8 +358,8 @@
 			"yum install -y httpd\n",
 			"systemctl enable httpd\n",
 			"systemctl start httpd\n",
-		        "echo hello sanjay, welcome to webserver >> /var/www/html/index.html",
-		        "echo hello",
+		        "echo hello sanjay, welcome to webserver >> /var/www/html/index.html\n",
+		        "echo hello\n",
 		        "setenforce 0"
 			] ]
     }
