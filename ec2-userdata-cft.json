@@ -358,7 +358,8 @@
 			"yum install -y httpd\n",
 			"systemctl enable httpd\n",
 			"systemctl start httpd\n",
-		        "echo hello sanjay, welcome to webserver >> /var/www/html/index.html"
+		        "echo hello sanjay, welcome to webserver >> /var/www/html/index.html",
+		        "echo hello"
 			] ]
     }
 }
@@ -387,8 +388,8 @@
 
           "CidrIp" : { "Ref" : "SSHLocation"}
 
-        } ],
-		"SecurityGroupIngress" : [ { "IpProtocol" : "tcp", "FromPort" : "80", "ToPort" : "80", "CidrIp" : { "Ref" : "SSHLocation"} } ]
+        }, 
+				 { "IpProtocol" : "tcp", "FromPort" : "80", "ToPort" : "80", "CidrIp" : { "Ref" : "SSHLocation"} }]
 
       }
 
